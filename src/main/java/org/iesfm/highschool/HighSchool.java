@@ -30,6 +30,9 @@ public class HighSchool {
         return getGroupStudents(groupName).contains(student);
     }
 
+    public boolean removeStudent(String student, String groupName) throws GroupNotFoundException {
+        return getGroupStudents(groupName).remove(student);
+    }
 
     public String getName() {
         return name;
